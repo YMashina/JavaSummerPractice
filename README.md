@@ -3,12 +3,13 @@
 ![](https://img.shields.io/badge/version-0.1-blue.svg) ![](https://img.shields.io/badge/build-passing-brightgreen.svg) ![](https://img.shields.io/badge/contributors-3-orange.svg)
 
 ### Description
-User-friendly GUI application for finding shortest paths in a weighted graph with Floyd-Warshall algorithm.
+User-friendly GUI application for visualisation of Floyd-Warshall algorithm for finding shortest paths in a weighted graph.
 
 ### Features
 * Simple
 * Fast
 * Intuitive
+* Elegant
 
 ### Algorithm explanation
 
