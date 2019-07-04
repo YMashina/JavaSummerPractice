@@ -14,7 +14,7 @@ User-friendly GUI application for finding shortest paths in a weighted graph wit
 
 Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.com/watch?v=4OQeCuLYj-4&feature=youtu.be).
 
-###User interface
+### User interface
 > Step 1: Choose the number of vertices in your graph
 
 ![step 1](pics/Sample_1.jpg)
@@ -39,7 +39,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 - [ ] Make it work on Linux
 - [ ] Tests
 
-###Developers
+### Developers
 * Mashina Yulia - GUI
 * Krevchik Angelina - Algorithm & Testing
 * Protsvetkina Anastasia - Algoritm & Documentation
