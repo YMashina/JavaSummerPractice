@@ -18,16 +18,16 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 ### User interface
 > Step 1: Choose the number of vertices in your graph
 
-![step 1](pics/Sample_1.jpg)
+![step 1](https://pp.userapi.com/c857532/v857532515/b489/B1KbdYQGp8c.jpg)
 > Step 2: Fill the adjacency matrix for your graph. Bear in mind: algorithm will not work with graphs with negative cycles but the application will not crash if you input such graph.
 
-![step 2](pics/Sample_2.jpg)
+![step 2](https://pp.userapi.com/c857532/v857532515/b490/gNigcJQA168.jpg)
 > Step 3: Take a look at your graph. Quite pretty, isn't it? Though, you may still drag vertices if something is overlapped.
 
-![step 3](pics/Sample_3.jpg)
+![step 3](https://pp.userapi.com/c857532/v857532515/b477/Xg8hHSsMar8.jpg)
 > Step 4: Start algorithm process
 
-![step 4](pics/Sample_4.jpg)
+![step 4](https://pp.userapi.com/c857532/v857532515/b480/dGfELRRK85I.jpg)
 
 ### Development progress
 
