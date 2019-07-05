@@ -33,8 +33,8 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 
 - [x] Design GUI
 - [x] Create prototype for displaying graph
-- [ ] Visualise algorithm
-    - [ ] Steps forward
+- [x] Visualise algorithm
+    - [x] Steps forward
     - [ ] Steps backwards
     - [ ] Animation
 - [ ] Make it work on Linux
