@@ -1,0 +1,1 @@
+FloydWarshall is a "package". if working with IntelliJ IDEA, put into 'src' folder
