@@ -37,7 +37,8 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
     - [x] Steps forward
     - [x] Steps backwards
     - [ ] Animation
-- [ ] Make it work on Linux
+- [ ] Add more features
+- [x] Make it work on Linux
 - [ ] Tests
 
 ### Developers
