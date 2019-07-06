@@ -1,6 +1,6 @@
 # Floyd-Warshall algorithm
 
-![](https://img.shields.io/badge/version-0.2-blue.svg) ![](https://img.shields.io/badge/build-passing-brightgreen.svg) ![](https://img.shields.io/badge/contributors-3-orange.svg)
+![](https://img.shields.io/badge/version-0.3-blue.svg) ![](https://img.shields.io/badge/build-passing-brightgreen.svg) ![](https://img.shields.io/badge/contributors-3-orange.svg)
 
 ### Description
 User-friendly GUI application for visualisation of Floyd-Warshall algorithm for finding shortest paths in a weighted graph.
@@ -35,7 +35,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 - [x] Create prototype for displaying graph
 - [x] Visualise algorithm
     - [x] Steps forward
-    - [ ] Steps backwards
+    - [x] Steps backwards
     - [ ] Animation
 - [ ] Make it work on Linux
 - [ ] Tests
