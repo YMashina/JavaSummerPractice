@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FloydWarshall.Matrix4by4">
+   <children>
+      <Label layoutX="132.0" layoutY="35.0" text="adjacency matrix for your graph">
+         <font>
+            <Font name="MUNICH  Regular" size="22.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" editable="false" layoutX="120.0" layoutY="126.0" prefHeight="25.0" prefWidth="70.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adj_matrix2_textfield1" alignment="CENTER" layoutX="209.0" layoutY="126.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="209.0" layoutY="179.0" prefHeight="25.0" prefWidth="70.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="301.0" layoutY="227.0" prefHeight="25.0" prefWidth="70.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="149.0" layoutY="95.0" text="A">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="95.0" text="b">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="95.0" text="c">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="125.0" text="A">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="178.0" text="b">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="226.0" text="c">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="322.0" text="empty or 0 = no connection">
+         <font>
+            <Font name="MUNICH  Regular" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adj_matrix2_textfield2" alignment="CENTER" layoutX="301.0" layoutY="126.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adj_matrix2_textfield5" alignment="CENTER" layoutX="301.0" layoutY="179.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adj_matrix2_textfield4" alignment="CENTER" layoutX="120.0" layoutY="179.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adj_matrix2_textfield7" alignment="CENTER" layoutX="120.0" layoutY="227.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adj_matrix2_textfield8" alignment="CENTER" layoutX="209.0" layoutY="227.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="build_graph_button" layoutX="132.0" layoutY="374.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="294.0" text="Build graph">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="312.0" layoutY="457.0" text="Krevchik Protsvetkina Mashina © 2019">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adj_matrix2_textfield12" alignment="CENTER" layoutX="301.0" layoutY="274.0" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="92.0" layoutY="273.0" text="d">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adj_matrix2_textfield10" alignment="CENTER" layoutX="120.0" layoutY="274.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adj_matrix2_textfield11" alignment="CENTER" layoutX="209.0" layoutY="274.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adj_matrix2_textfield9" alignment="CENTER" layoutX="396.0" layoutY="227.0" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="425.0" layoutY="95.0" text="d">
+         <font>
+            <Font name="MUNICH  Regular" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adj_matrix2_textfield3" alignment="CENTER" layoutX="396.0" layoutY="126.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="adj_matrix2_textfield6" alignment="CENTER" layoutX="396.0" layoutY="179.0" onAction="#initialize" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="396.0" layoutY="274.0" prefHeight="25.0" prefWidth="70.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

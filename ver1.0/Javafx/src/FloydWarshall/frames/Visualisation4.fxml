@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="812.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FloydWarshall.Visualisation4">
+   <children>
+      <Label layoutX="299.0" layoutY="35.0" text="take a look at the process!">
+         <font>
+            <Font name="MUNICH  Regular" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="650.0" layoutY="783.0" text="Krevchik Protsvetkina Mashina © 2019">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="243.0" layoutY="242.0" prefHeight="328.0" prefWidth="412.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="A" GridPane.columnIndex="1">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="b" GridPane.columnIndex="2">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="c" GridPane.columnIndex="3">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="d" GridPane.columnIndex="4">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="A" GridPane.rowIndex="1">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="b" GridPane.rowIndex="2">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="c" GridPane.rowIndex="3">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="d" GridPane.rowIndex="4">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="e" GridPane.columnIndex="5">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="e" GridPane.rowIndex="5">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="f" GridPane.columnIndex="6">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="f" GridPane.rowIndex="6">
+               <font>
+                  <Font name="MUNICH  Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label3" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label4" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label5" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label6" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label7" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label8" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label9" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label10" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label11" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label12" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label13" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label14" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label15" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label16" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label17" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label18" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label19" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label20" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label21" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label22" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label23" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label24" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label25" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label26" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label27" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label28" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label29" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label30" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label31" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label32" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label33" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label34" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label35" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label36" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="81.0" text="0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="start_over_button" layoutX="336.0" layoutY="678.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="217.0" text="hmm... start over">
+         <font>
+            <Font name="MUNICH  Regular" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="immediate_result_button" layoutX="308.0" layoutY="619.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="280.0" text="i want results immediately!">
+         <font>
+            <Font name="MUNICH  Regular" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="next_step_button" layoutX="682.0" layoutY="387.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="158.0" text="next step!">
+         <font>
+            <Font name="MUNICH  Regular" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="previous_step_button" layoutX="56.0" layoutY="386.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="158.0" text="previous step!">
+         <font>
+            <Font name="MUNICH  Regular" size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="279.0" layoutY="189.0" text="shortest paths matrix for you:">
+         <font>
+            <Font name="MUNICH  Regular" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="k_label" layoutX="336.0" layoutY="74.0" text="k = 0">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="i_label" layoutX="425.0" layoutY="74.0" text="i = 0">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="j_label" layoutX="512.0" layoutY="74.0" text="j = 0">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="if_statement_label" alignment="TOP_CENTER" layoutX="222.0" layoutY="107.0" prefHeight="29.0" prefWidth="468.0" text="dist[i][k] + dist[k][j] &lt; dist[i][j]?">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="233.0" layoutY="103.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #bb0a1e;" width="137.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="387.0" layoutY="103.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #49796b;" width="123.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="534.0" layoutY="103.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #18004c;" width="144.0" />
+      <Label fx:id="if_statement_result_label" alignment="TOP_CENTER" layoutX="233.0" layoutY="148.0" prefHeight="29.0" prefWidth="438.0" text="let's see!">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

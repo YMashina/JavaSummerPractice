@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="626.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FloydWarshall.Visualisation">
+   <children>
+      <Label layoutX="190.0" layoutY="23.0" text="take a look at the process!">
+         <font>
+            <Font name="MUNICH  Regular" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="if_statement_label" alignment="TOP_CENTER" layoutX="114.0" layoutY="117.0" prefHeight="29.0" prefWidth="468.0" text="dist[i][k] + dist[k][j] &lt; dist[i][j]?">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="if_statement_result_label" alignment="TOP_CENTER" layoutX="125.0" layoutY="158.0" prefHeight="29.0" prefWidth="438.0" text="let's see!">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="203.0" text="shortest paths matrix for you:">
+         <font>
+            <Font name="MUNICH  Regular" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="256.0" text="A">
+         <font>
+            <Font name="MUNICH  Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="256.0" text="b">
+         <font>
+            <Font name="MUNICH  Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="256.0" text="c">
+         <font>
+            <Font name="MUNICH  Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="296.0" text="A">
+         <font>
+            <Font name="MUNICH  Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="337.0" text="b">
+         <font>
+            <Font name="MUNICH  Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="380.0" text="c">
+         <font>
+            <Font name="MUNICH  Regular" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="next_step_button" layoutX="462.0" layoutY="320.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="158.0" text="next step!">
+         <font>
+            <Font name="MUNICH  Regular" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="immediate_result_button" layoutX="201.0" layoutY="445.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="280.0" text="i want results immediately!">
+         <font>
+            <Font name="MUNICH  Regular" size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="k_label" layoutX="228.0" layoutY="84.0" text="k = 0">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="i_label" layoutX="317.0" layoutY="84.0" text="i = 0">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="j_label" layoutX="404.0" layoutY="84.0" text="j = 0">
+         <font>
+            <Font name="Quicksand-Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="597.0" text="Krevchik Protsvetkina Mashina © 2019">
+         <font>
+            <Font name="Quicksand-Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="CC_connection_label" layoutX="399.0" layoutY="381.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="CB_connection_label" layoutX="340.0" layoutY="381.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="CA_connection_label" layoutX="284.0" layoutY="381.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="BC_connection_label" layoutX="399.0" layoutY="338.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="BB_connection_label" layoutX="340.0" layoutY="339.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="BA_connection_label" layoutX="284.0" layoutY="339.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="AA_connection_label" alignment="CENTER" contentDisplay="CENTER" layoutX="283.0" layoutY="298.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="AB_connection_label" layoutX="340.0" layoutY="297.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="AC_connection_label" layoutX="399.0" layoutY="297.0" text="0">
+         <font>
+            <Font name="Quicksand-Regular" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="125.0" layoutY="113.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #bb0a1e;" width="137.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="426.0" layoutY="113.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #18004c;" width="144.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="279.0" layoutY="113.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #49796b;" width="123.0" />
+      <Button fx:id="previous_step_button" layoutX="29.0" layoutY="320.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="158.0" text="previous step!">
+         <font>
+            <Font name="MUNICH  Regular" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="start_over_button" layoutX="232.0" layoutY="522.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="217.0" text="hmm... start over">
+         <font>
+            <Font name="MUNICH  Regular" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
