@@ -29,6 +29,9 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 
 ![step 4](https://pp.userapi.com/c853524/v853524135/8af7f/qMpOp_qv12w.jpg)
 
+### Main menu
+![](https://media.giphy.com/media/f6JGwB075ksyD3LuKn/giphy.gif)
+
 ### Development progress
 
 - [x] Design GUI
