@@ -18,7 +18,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 ### User interface
 > Step 1: Choose the number of vertices in your graph
 
-![step 1](https://pp.userapi.com/c858236/v858236135/d844/sedxun1RKQM.jpg)
+![step 1](https://pp.userapi.com/c856024/v856024383/8b938/QtZshcI0Gmk.jpg)
 > Step 2: Fill the adjacency matrix for your graph. Bear in mind: algorithm will not work with graphs with negative cycles but the application will not crash if you input such graph.
 
 ![step 2](https://pp.userapi.com/c858236/v858236135/d84b/SjZ3yl9Hq2g.jpg)
@@ -30,7 +30,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 ![step 4](https://pp.userapi.com/c853524/v853524135/8af7f/qMpOp_qv12w.jpg)
 
 ### Main menu
-![](https://media.giphy.com/media/f6JGwB075ksyD3LuKn/giphy.gif)
+![](https://media.giphy.com/media/cIny9hINC4jgRnF3mz/giphy.gif)
 
 ### Development progress
 
