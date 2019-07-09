@@ -39,6 +39,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 - [x] Visualise algorithm
     - [x] Steps forward
     - [x] Steps backwards
+    - [x] Animation
 - [x] Add more features
 - [x] Make it work on Linux
 - [ ] Tests
