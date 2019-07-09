@@ -28,7 +28,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 
 > We bet you were not prepared for THIS
 
-![We bet you were not prepared for THIS](https://vk.com/doc69767709_510043591?hash=9dba2a039389410ddf&dl=a15b45c61b92c7666f&wnd=1&module=im)
+![We bet you were not prepared for THIS](https://vk.com/doc69767709_510044956?hash=6b43dac0b041245b27&dl=08554f058a32e43a5e&wnd=1&module=im)
 
 > Step 4: Start algorithm process
 
