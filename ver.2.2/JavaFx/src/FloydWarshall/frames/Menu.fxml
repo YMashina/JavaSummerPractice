@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="600.0" style="-fx-background-color: #222427;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FloydWarshall.Controller">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="432.0" prefWidth="179.0" style="-fx-background-color: #222427;">
+         <children>
+            <GridPane layoutX="6.0" layoutY="56.0" prefHeight="347.0" prefWidth="162.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="floydwhat_button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#explanation" prefHeight="39.0" prefWidth="189.0" style="-fx-background-color: #26282b; -fx-focus-color: transparent;" text="Floyd... what?" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="MUNICH  Regular" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fileinput_button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#fileinput" prefHeight="39.0" prefWidth="203.0" style="-fx-background-color: #26282b; -fx-focus-color: transparent;" text="i ❤ .txt" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="MUNICH  Regular" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exit_button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="188.0" style="-fx-background-color: #26282b; -fx-focus-color: transparent;" text="exit" textFill="WHITE" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="MUNICH  Regular" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="faq_button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#faq" prefHeight="39.0" prefWidth="189.0" style="-fx-background-color: #26282b; -fx-focus-color: transparent;" text="f. a. q." textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="MUNICH  Regular" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="main_sheet_button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#main_sheet" prefHeight="39.0" prefWidth="181.0" style="-fx-background-color: #26282b; -fx-focus-color: transparent;" text="M a i n" textFill="WHITE">
+                     <font>
+                        <Font name="MUNICH  Regular" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="faq_pane" layoutX="180.0" prefHeight="432.0" prefWidth="427.0" style="-fx-background-color: #2f3136;">
+         <children>
+            <Label layoutX="183.0" layoutY="34.0" text="F. A. Q." textFill="#dadada">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Text fill="#d7d7d7" fontSmoothingType="LCD" layoutX="29.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q: Why are there so many separate windows?" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#d7d7d7" fontSmoothingType="LCD" layoutX="29.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A: Wait, do you like windows or what? Anyways, many windows allow you to compare things and try different input tout de suite!" textAlignment="JUSTIFY" wrappingWidth="346.97601318359375">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#d7d7d7" fontSmoothingType="LCD" layoutX="29.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q: Could you add this one feature of..." textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#d7d7d7" fontSmoothingType="LCD" layoutX="29.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A: Now that's too many questions for today,     I have things to do, you know." textAlignment="JUSTIFY" wrappingWidth="369.3760070800781">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#d7d7d7" fontSmoothingType="LCD" layoutX="29.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q: Where do I complain?" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#d7d7d7" fontSmoothingType="LCD" layoutX="29.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A: You can always send your best wishes to my lovely teammates." textAlignment="JUSTIFY" wrappingWidth="301.2479553222656">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="explanation_pane" layoutX="180.0" prefHeight="425.0" prefWidth="427.0" style="-fx-background-color: #2f3136;">
+         <children>
+            <Text fill="#e8e8e8" fontSmoothingType="LCD" layoutX="23.0" layoutY="179.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Well, you have an adjacency matrix that shows all connections between every pair of vertexes in your graph, right? Guess what, you can USE it to know the cost of the shortest path from vertex A to vertex B! Intrigued? Stay tuned for some VISUAL" textAlignment="JUSTIFY" wrappingWidth="381.0">
+               <font>
+                  <Font name="Quicksand-Regular" size="20.0" />
+               </font>
+            </Text>
+            <Label layoutX="21.0" layoutY="30.0" text="Floyd-Warshall Algorithm" textFill="#dddddd">
+               <font>
+                  <Font name="MUNICH  Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="69.0" prefHeight="40.0" prefWidth="281.0" text="will find you the shortest paths" textFill="#dadada">
+               <font>
+                  <Font name="MUNICH  Regular" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="fileinput_pane" layoutX="174.0" prefHeight="432.0" prefWidth="433.0" style="-fx-background-color: #2f3136;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="98.0" prefHeight="24.0" prefWidth="347.0" text="whatever floats your boat mate..." textFill="#d7d7d7">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="208.0" prefHeight="24.0" prefWidth="347.0" text="which .txt is your favorite today?" textFill="#d7d7d7">
+               <font>
+                  <Font name="Quicksand-Regular" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="filename_submitbutton" contentDisplay="CENTER" layoutX="161.0" layoutY="349.0" mnemonicParsing="false" onAction="#filename_submit_button" prefHeight="33.0" prefWidth="106.0" style="-fx-background-color: #292b2e; -fx-focus-color: #26282b;" text="THIS ONE!" textFill="#d3d3d3">
+               <font>
+                  <Font name="Quicksand-Regular" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="54.0" prefHeight="24.0" prefWidth="347.0" text="Input from .txt file" textFill="#d7d7d7">
+               <font>
+                  <Font name="Quicksand-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="choosefile_button" contentDisplay="CENTER" layoutX="115.0" layoutY="270.0" mnemonicParsing="false" onAction="#choose_file_function" prefHeight="33.0" prefWidth="198.0" style="-fx-background-color: #292b2e; -fx-focus-color: #26282b;" text="CHOOSE YOUR FILE" textFill="#d3d3d3">
+               <font>
+                  <Font name="Quicksand-Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="filenamelabel" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="313.0" prefHeight="24.0" prefWidth="427.0" text="Your file:" textFill="#d7d7d7">
+               <font>
+                  <Font name="Quicksand-Regular" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="main_pane" layoutX="180.0" prefHeight="432.0" prefWidth="427.0" style="-fx-background-color: #2f3136;">
+         <children>
+            <Label layoutX="21.0" layoutY="30.0" text="Floyd-Warshall Algorithm" textFill="#dddddd">
+               <font>
+                  <Font name="MUNICH  Regular" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="69.0" prefHeight="40.0" prefWidth="281.0" text="will find you the shortest paths" textFill="#dadada">
+               <font>
+                  <Font name="MUNICH  Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="172.0" text="How many vertices are there in your graph?" textFill="#ebebeb">
+               <font>
+                  <Font name="MUNICH  Regular" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choice_box_number_of_vertexes" layoutX="174.0" layoutY="217.0" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #72767d; -fx-text-fill: #000000;" />
+            <Button fx:id="get_started_button" alignment="CENTER" contentDisplay="CENTER" layoutX="141.0" layoutY="271.0" mnemonicParsing="false" style="-fx-background-color: #3e4047;" text="Get started" textFill="#eeeeee">
+               <font>
+                  <Font name="MUNICH  Regular" size="22.0" />
+               </font>
+            </Button>
+            <Label layoutX="174.0" layoutY="391.0" text="Krevchik Protsvetkina Mashina © 2019" textFill="#9e9e9e">
+               <font>
+                  <Font name="Quicksand-Regular" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
