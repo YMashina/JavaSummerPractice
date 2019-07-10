@@ -133,8 +133,12 @@ public class Controller {
 
         //public static void main(String[] args) throws FileNotFoundException {
 
-            String st = new Scanner(input)
-                    .useDelimiter("\\A").next();
+        String st;
+            try{st = new Scanner(input)
+                    .useDelimiter("\\A").next();}
+            catch (Exception e){
+                alert("Empty file!","What am I supposed to do with it?"); return;
+            }
 
             //System.out.printf("{%s}\n\n",st);
        // System.out.println(st);
@@ -142,7 +146,7 @@ public class Controller {
 
         //System.out.printf("'%s'",st);
 
-        if(st=="") {alert("Empty file!","What am I supposed to do with it?"); return;}
+        if(st==null) {alert("Empty file!","What am I supposed to do with it?"); return;}
 
 
 
