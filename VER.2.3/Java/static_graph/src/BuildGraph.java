@@ -40,7 +40,7 @@ public class BuildGraph extends JFrame
      *
      */
     //JFrame.setBackground( Color.getColor("#cdcdcd") );
-   // private static final long serialVersionUID = -2707712944901661771L;
+    // private static final long serialVersionUID = -2707712944901661771L;
     final static int INF = 100000, FRAME_WIDTH = 500,FRAME_HEIGHT = 500;
 
 
@@ -66,41 +66,12 @@ public class BuildGraph extends JFrame
         //System.out.println("Hello World!");
     }
 
+    public BuildGraph(){
 
+        super("Your graph.    Krevchik Protsvetkina Mashina © 2019");
 
-
-    //public void BuildGraphf (int vertex) throws IOException, InterruptedException {
-        //super("Your graph.    Krevchik Protsvetkina Mashina © 2019");
-
-
-        //this.getContentPane().setBackground( Color.getColor("#323232") );
-
-
-        //getContentPane().setBackground( Color.getColor("#323232") );
-        //JFrame.setDefaultLookAndFeelDecorated(true);
-
-
-   // }
-
-
-
-    public void main(String[] args) throws IOException, InterruptedException {
-
-        JFrame frame = new JFrame();
-
-
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
-        frame.setLocationRelativeTo(null);
-        JFrame frame = new JFrame();
-
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
         mxGraph graph = new mxGraph();
         Object parent = graph.getDefaultParent();
-
-        frame.getContentPane().add(new JScrollPane(graph));
 
         String matrix = read_from_file();
         var arrayOfStrings = matrix.split(" ");//turn input line from file into an array of basically "integers",
@@ -175,7 +146,7 @@ public class BuildGraph extends JFrame
 
             }
 
-            graph.setCellStyles(mxConstants.STYLE_FILLCOLOR, "#FFAACC", new Object[]{array_of_vertexes[2]});
+            //graph.setCellStyles(mxConstants.STYLE_FILLCOLOR, "#FFAACC", new Object[]{array_of_vertexes[2]});
 
             mxConstants.DEFAULT_FONTFAMILIES = "Quicksand-Regular"; //DEFAULT_FONTFAMILIES("Calibri Light");
             mxConstants.DEFAULT_FONTFAMILY = "Quicksand-Regular";
@@ -186,7 +157,7 @@ public class BuildGraph extends JFrame
 
             for(int q = 0; q<V; q++){
                 for(int j= 0;j<V;j++){
-                    if(adj_matrix[q][j]>0&&adj_matrix[q][j]<INF){
+                    if(adj_matrix[q][j]<INF){
                         array_of_edges[counter] = graph.insertEdge(parent, null, adj_matrix[q][j], array_of_vertexes[q], array_of_vertexes[j]);
                         graph.setCellStyles(mxConstants.STYLE_STROKECOLOR, "#636668", new Object[]{array_of_edges[counter]});
                         graph.setCellStyles(mxConstants.STYLE_FONTCOLOR, "#222427", new Object[]{array_of_edges[counter]});
@@ -236,39 +207,46 @@ public class BuildGraph extends JFrame
         getContentPane().add(graphComponent);
 
 
+    }
+
+
+
+
+    //public void BuildGraphf (int vertex) throws IOException, InterruptedException {
+    //super("Your graph.    Krevchik Protsvetkina Mashina © 2019");
+
+
+    //this.getContentPane().setBackground( Color.getColor("#323232") );
+
+
+    //getContentPane().setBackground( Color.getColor("#323232") );
+    //JFrame.setDefaultLookAndFeelDecorated(true);
+
+
+    // }
+
+
+
+    public static void main(String[] args) throws IOException, InterruptedException {
+
+        BuildGraph frame = new BuildGraph();
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+        frame.setLocationRelativeTo(null);
+
+
         frame.setVisible(true);
 
-        final Path path = FileSystems.getDefault().getPath(System.getProperty("user.dir"));
-        //System.out.println(path);
-        try (final WatchService watchService = FileSystems.getDefault().newWatchService()) {
-            final WatchKey watchKey = path.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY);
-            while (true) {
-                final WatchKey wk = watchService.take();
-                for (WatchEvent<?> event : wk.pollEvents()) {
-                    //we only register "ENTRY_MODIFY" so the context is always a Path.
-                    final Path changed = (Path) event.context();
-                    //System.out.println(changed);
-                    if (changed.endsWith("changes.txt")) {
-                        System.out.println("change");
-                        //ProcessInput();
-                        // graph.setCellStyles(mxConstants.STYLE_FILLCOLOR, "#FFAAFC", new Object[]{array_of_vertexes[o++]});
-                        frame.BuildGraphf(1);
-                        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                      //  frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
-                        //frame.setLocationRelativeTo(null);
 
-                        frame.setVisible(false);
-                        frame.setVisible(true);
 
-                    }
-                }
-                // reset the key
-                boolean valid = wk.reset();
-                if (!valid) {
-                    System.out.println("Key has been unregistered");
-                }
-            }
-        }
+
+
+
+
+        //frame.setVisible(true);
+
+
 
         //Color c = new Color(123456);
         //frame.getContentPane().setBackground(c);
