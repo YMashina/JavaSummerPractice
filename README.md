@@ -54,7 +54,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
     - [x] Animation
 - [x] Add more features
 - [x] Make it work on Linux
-- [ ] Tests
+- [x] Tests
 
 ### Developers
 * Mashina Yulia - GUI
