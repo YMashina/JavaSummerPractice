@@ -26,23 +26,19 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 
 ![step 3](https://pp.userapi.com/c852132/v852132898/16a436/X1jPaVYJTqY.jpg)
 
-> We bet you were not prepared for THIS
-
-![We bet you were not prepared for THIS](https://vk.com/doc69767709_510195249?hash=91555450fd5777dcbc&dl=60a42cb6ea50a60797&wnd=1&module=im)
 
 > Step 4: Start algorithm process
 
-![step 4](https://pp.userapi.com/c852132/v852132917/16b276/yRefv2SMR7M.jpg)
+![step 4](https://pp.userapi.com/c851028/v851028294/1693ea/Kbr-YSVnT08.jpg)
 
 ### Main menu
 ![](https://psv4.userapi.com/c848220/u69767709/docs/d9/f0d8ccd4df1f/ezgif_com-crop_2.gif?extra=ZUYiM8D2MJeWEUp-KOsMKhlC9lYkExdu84g6LRnrG83T5IT9Cj2DOqev0EhERjhJS4kERNyVeXZwBUNE3-opbY71a7UWlxyfnFJcT7f-UOjMABMrwiiAkNtVnDYJVwIgMFza04aQX90qW2ysnlxqnGY)
 
 ### What's new in this version?
 
-* Interface theme updated.
-* Input from file using file chooser now available!
 * Visualization tweaks
 * Graph animation
+* Bug fixes
 
 ### Development progress
 
