@@ -39,6 +39,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 * Visualization tweaks
 * Graph animation
 * Bug fixes
+* Flying graph gone bc nobody loves him
 
 ### Development progress
 
