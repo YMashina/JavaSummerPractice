@@ -56,6 +56,9 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 - [x] Make it work on Linux
 - [x] Tests
 
+### Runnable .jar file
+[Make sure you've read the ReadMe](https://drive.google.com/open?id=1xnlwMLK5-q6BtLFtmlAAU5HsPDoVIRF0)
+
 ### Developers
 * Mashina Yulia - GUI
 * Krevchik Angelina - Algorithm & Testing
