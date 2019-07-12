@@ -42,7 +42,7 @@ Amazingly simple explanation of the algorithm on [youtube](https://www.youtube.c
 
 ### Development progress
 
-[Take a look at our progress version by version at out Wiki page!](https://github.com/YMashina/JavaSummerPractice/wiki)
+Take a look at our progress version by version at our [Wiki page!](https://github.com/YMashina/JavaSummerPractice/wiki)
 
 - [x] Design GUI
 - [x] Create prototype for displaying graph
